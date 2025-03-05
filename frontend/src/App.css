@@ -80,6 +80,8 @@ body {
   height: 330px; /* Uniform Height */
   display: flex;
   flex-direction: column;
+  max-width: 220px;
+  margin: 0 auto;
 }
 
 .book-card:hover {
@@ -332,6 +334,79 @@ body {
   right: -10px;
   box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.1);
 }
+
+.search-bar select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.book-details-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.book-details {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  width: 500px;
+}
+
+.book-page-image {
+  width: 30%;
+  height: 200px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+
+.book-page-info {
+  flex-grow: 1;
+  width: 60%;
+}
+
+.book-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.book-author, .book-genre, .book-rating {
+  margin: 5px 0;
+}
+
+.reviews-section {
+  margin-top: 20px;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.book-details {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+.sign-in-prompt {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
 
 
 /* 

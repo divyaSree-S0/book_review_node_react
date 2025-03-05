@@ -1,0 +1,18 @@
+.book-details {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.book-image {
+    width: 200px;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.sign-in-prompt {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
