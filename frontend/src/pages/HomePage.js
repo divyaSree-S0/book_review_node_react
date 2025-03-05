@@ -11,7 +11,7 @@ function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:5001/api/books")
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/books`)
             .then((res) => {
                 setBooks(res.data);
                 console.log(res.data)
@@ -27,7 +27,7 @@ function HomePage() {
 
     const handleSearch = async () => {
         try {
-            const res = await axios.get(`http://localhost:5001/api/books?q=${search}&genre=${genre}`);
+            const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/books?q=${search}&genre=${genre}`);
             setBooks(res.data);
         } catch (error) {
             console.error("Error searching books:", error);

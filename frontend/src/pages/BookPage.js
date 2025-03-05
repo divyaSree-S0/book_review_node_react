@@ -9,7 +9,7 @@ function BookDetails() {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:5001/api/books/${id}`)
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/books/${id}`)
             .then((res) => {
                 setBook(res.data.book);
                 setReviews(res.data.reviews);
@@ -23,7 +23,7 @@ function BookDetails() {
         <div className="book-details-container">
             <div className="book-details">
                 <img
-                    src={book.coverImage || "https://via.placeholder.com/150"}
+                    src={book.coverImage}
                     alt={book.title}
                     className="book-page-image"
                 />
